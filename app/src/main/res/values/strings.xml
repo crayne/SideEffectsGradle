@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SideEffects</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings_string">Settings</string>
+    <string name="title_activity_main">SideEffects</string>
+    <string name="menu_search_string" >Search for Your Medications</string><string name="search_hint">Search medications</string>
+    <string name="enter_medication">Enter Medication</string> 
+    <string name="my_medications_text">My Medications</string> 
+    <string name="search_symptom">Search Side Effects By Symptom</string>    
+    <string name="attribution_label">SideEffects uses data from the Sider2 Side Effect Resource (sideeffects.embl.de). 
+        	Side effects may occasionally be missing or incorrect.
+        	This information is not intended as a substitute for professional medical advice, diagnosis, or treatment.  Please do not stop taking any medication without consulting your physician.
+    </string>
+    <string name="find_side_effect_frequencies">Find Them</string>
+    <string name="which_medications">Which of your medications have this symptom as a side effect?</string>
+    <string name="enter_sideeffect">Enter Side Effect</string>
+    <string name="back">Back</string>
+    <string name="database_connection_error">SideEffects is stopping because of a database connection error</string>
+    <string name="send_to_doctor_button">Send This Information To Your Doctor</string>
+
+</resources>

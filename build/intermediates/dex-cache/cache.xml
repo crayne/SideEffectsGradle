@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/libs/apache-commons-lang.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0ce1edb914c94ebc388f086c6827e8bdeec71ac2">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/2/apache-commons-lang_6c3086479658d5557fcd6b40df0b8eb49d4caf8e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/susancrayne/AndroidSdkR20.0.3/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_5159e8a07ce97c7c3ed3a4e11aeb3e1443f83ad2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="52c5f81c2d5d21db8d79c127322294dc2f283e2c">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_233e0c3ce680036b7b09b78d21fbb7a39c4f47b5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="fe87341dde7577f4efc4721e6e9d4e2de0f4c048">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9b88c94d196ece1b6b79498b504de50cd9d90b24/classes.dex" />
+    </item>
+
+</items>

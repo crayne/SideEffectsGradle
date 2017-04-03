@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/medname"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="6dip"
+	    android:textSize="20sp"
+	    android:textColor="@color/screen_background"
+	    android:textStyle="normal"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:focusable="false"
+		android:focusableInTouchMode="false"
+	    
+	      	    
+	/>
+

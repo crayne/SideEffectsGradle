@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/merged/debug/drawable/medlist_button_shape.xml",
+        "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/drawable/medlist_button_shape.xml"
+    },
+    {
+        "merged": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/merged/debug/drawable/autocomplete_delete_button.xml",
+        "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/drawable/autocomplete_delete_button.xml"
+    },
+    {
+        "merged": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/merged/debug/drawable/autocomplete_shape.xml",
+        "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/drawable/autocomplete_shape.xml"
+    },
+    {
+        "merged": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/merged/debug/drawable/button_shape.xml",
+        "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/drawable/button_shape.xml"
+    },
+    {
+        "merged": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/merged/debug/drawable/sideeffects_button_shape.xml",
+        "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/drawable/sideeffects_button_shape.xml"
+    }
+]

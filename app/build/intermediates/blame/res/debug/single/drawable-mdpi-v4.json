@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_action_search.png",
+        "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/drawable-mdpi/ic_action_search.png"
+    },
+    {
+        "merged": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]
