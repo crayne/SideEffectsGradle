@@ -27,25 +27,26 @@ public final class R {
         public static final int sideeffects_button_shape=0x7f020006;
     }
     public static final class id {
-        public static final int attribution_label_id=0x7f0b0005;
+        public static final int attribution_label_id=0x7f0b0006;
         public static final int autocomplete_medications=0x7f0b0000;
         public static final int autocomplete_medications_delete_button=0x7f0b0001;
-        public static final int autocomplete_symptoms=0x7f0b0007;
-        public static final int autocomplete_symptoms_delete_button=0x7f0b0008;
-        public static final int back_button=0x7f0b0006;
-        public static final int frequency_medication_list=0x7f0b000a;
-        public static final int med_side_effects_label=0x7f0b000d;
-        public static final int medbutton=0x7f0b0011;
+        public static final int autocomplete_symptoms=0x7f0b0008;
+        public static final int autocomplete_symptoms_delete_button=0x7f0b0009;
+        public static final int back_button=0x7f0b0007;
+        public static final int frequency_medication_list=0x7f0b000b;
+        public static final int interactions_button=0x7f0b0004;
+        public static final int med_side_effects_label=0x7f0b000e;
+        public static final int medbutton=0x7f0b0012;
         public static final int medication_list=0x7f0b0003;
-        public static final int medname=0x7f0b0010;
-        public static final int menu_settings=0x7f0b0012;
+        public static final int medname=0x7f0b0011;
+        public static final int menu_settings=0x7f0b0013;
         public static final int my_medications_id=0x7f0b0002;
-        public static final int send_to_doctor=0x7f0b000c;
-        public static final int symptom_screen_button_id=0x7f0b0004;
-        public static final int symptoms=0x7f0b000b;
-        public static final int symptoms_for_med_list=0x7f0b000e;
-        public static final int symptoms_for_medication=0x7f0b000f;
-        public static final int which_medications=0x7f0b0009;
+        public static final int send_to_doctor=0x7f0b000d;
+        public static final int symptom_screen_button_id=0x7f0b0005;
+        public static final int symptoms=0x7f0b000c;
+        public static final int symptoms_for_med_list=0x7f0b000f;
+        public static final int symptoms_for_medication=0x7f0b0010;
+        public static final int which_medications=0x7f0b000a;
     }
     public static final class integer {
         public static final int max_medlist_rows=0x7f080000;
@@ -73,14 +74,15 @@ public final class R {
         public static final int enter_sideeffect=0x7f090005;
         public static final int find_side_effect_frequencies=0x7f090006;
         public static final int hello_world=0x7f090007;
-        public static final int menu_search_string=0x7f090008;
-        public static final int menu_settings_string=0x7f090009;
-        public static final int my_medications_text=0x7f09000a;
-        public static final int search_hint=0x7f09000b;
-        public static final int search_symptom=0x7f09000c;
-        public static final int send_to_doctor_button=0x7f09000d;
-        public static final int title_activity_main=0x7f09000e;
-        public static final int which_medications=0x7f09000f;
+        public static final int medication_interactions=0x7f090008;
+        public static final int menu_search_string=0x7f090009;
+        public static final int menu_settings_string=0x7f09000a;
+        public static final int my_medications_text=0x7f09000b;
+        public static final int search_hint=0x7f09000c;
+        public static final int search_symptom=0x7f09000d;
+        public static final int send_to_doctor_button=0x7f09000e;
+        public static final int title_activity_main=0x7f09000f;
+        public static final int which_medications=0x7f090010;
     }
     public static final class style {
         public static final int AppTheme=0x7f050000;

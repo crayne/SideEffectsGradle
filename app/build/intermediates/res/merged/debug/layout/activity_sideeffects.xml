@@ -53,7 +53,7 @@
    <ListView
         android:id="@+id/medication_list"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:listSelector="@android:color/transparent"
         android:paddingLeft="4sp"
         android:paddingRight="4sp"
@@ -69,8 +69,30 @@
         android:divider="@color/screen_background"
         android:dividerHeight="1sp"
     />
-   
-   <!-- Next Screen Button -->
+   <!-- Interactions Button -->
+	<Button
+		android:id="@+id/interactions_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/sideeffects_button_shape"
+		android:layout_centerHorizontal = "true"
+		android:text="@string/medication_interactions"
+		android:textColor="@color/screen_background"
+		android:layout_marginBottom="10sp"
+		android:layout_marginTop="20sp"
+		android:layout_marginLeft="8sp"
+		android:layout_marginRight="8sp"
+		android:paddingLeft="10sp"
+		android:paddingRight="10sp"
+		android:textSize="22sp"
+		android:typeface="sans"
+		android:textStyle="normal"
+		android:layout_below="@id/medication_list"
+
+		/>
+
+
+	<!-- Next Screen Button -->
       <Button
         android:id="@+id/symptom_screen_button_id"
         android:layout_width="wrap_content"
@@ -88,7 +110,7 @@
         android:textSize="22sp"
         android:typeface="sans"       
         android:textStyle="normal"
-        android:layout_below="@id/medication_list"
+        android:layout_below="@id/interactions_button"
         
          />
       

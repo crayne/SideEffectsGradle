@@ -24,11 +24,12 @@
     <string name="enter_sideeffect">Enter Side Effect</string>
     <string name="find_side_effect_frequencies">Find Them</string>
     <string name="hello_world">Hello world!</string>
+    <string name="medication_interactions">Medication Interactions</string>
     <string name="menu_search_string">Search for Your Medications</string>
     <string name="menu_settings_string">Settings</string>
     <string name="my_medications_text">My Medications</string>
     <string name="search_hint">Search medications</string>
-    <string name="search_symptom">Search Side Effects By Symptom</string>
+    <string name="search_symptom">Reverse Side EffectSearch</string>
     <string name="send_to_doctor_button">Send This Information To Your Doctor</string>
     <string name="title_activity_main">SideEffects</string>
     <string name="which_medications">Which of your medications have this symptom as a side effect?</string>

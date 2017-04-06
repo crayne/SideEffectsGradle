@@ -6,7 +6,8 @@
     <string name="menu_search_string" >Search for Your Medications</string><string name="search_hint">Search medications</string>
     <string name="enter_medication">Enter Medication</string> 
     <string name="my_medications_text">My Medications</string> 
-    <string name="search_symptom">Search Side Effects By Symptom</string>    
+    <string name="search_symptom">Reverse Side EffectSearch</string>
+    <string name="medication_interactions">Medication Interactions</string>
     <string name="attribution_label">SideEffects uses data from the Sider2 Side Effect Resource (sideeffects.embl.de). 
         	Side effects may occasionally be missing or incorrect.
         	This information is not intended as a substitute for professional medical advice, diagnosis, or treatment.  Please do not stop taking any medication without consulting your physician.
