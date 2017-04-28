@@ -71,7 +71,7 @@
     />
    <!-- Interactions Button -->
 	<Button
-		android:id="@+id/interactions_button"
+		android:id="@+id/interactions_button_id"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:background="@drawable/sideeffects_button_shape"
@@ -110,7 +110,7 @@
         android:textSize="22sp"
         android:typeface="sans"       
         android:textStyle="normal"
-        android:layout_below="@id/interactions_button"
+        android:layout_below="@id/interactions_button_id"
         
          />
       

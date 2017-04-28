@@ -12,6 +12,10 @@
         "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/layout/activity_sideeffects.xml"
     },
     {
+        "merged": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/merged/debug/layout/activity_interactions.xml",
+        "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/layout/activity_interactions.xml"
+    },
+    {
         "merged": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/merged/debug/layout/activity_symptoms_for_med.xml",
         "source": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/layout/activity_symptoms_for_med.xml"
     },

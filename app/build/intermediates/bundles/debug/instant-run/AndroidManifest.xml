@@ -11,6 +11,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- <uses-permission android:name="android.permission.SET_DEBUG_APP" ></uses-permission> -->
 
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:icon="@drawable/ic_launcher"
@@ -28,11 +32,13 @@
         </activity>
         <activity
             android:name="com.oryxtech.android.sideeffects.SymptomScreen"
-            android:label="@string/app_name" >
-        </activity>
+            android:label="@string/app_name" />
         <activity
             android:name="com.oryxtech.android.sideeffects.SymptomsForMedicationScreen"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.oryxtech.android.sideeffects.Interactions"
+            android:label="@string/title_activity_interactions" >
         </activity>
     </application>
 

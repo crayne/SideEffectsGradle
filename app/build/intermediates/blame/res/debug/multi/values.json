@@ -12,7 +12,15 @@
                     "endOffset": 358
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/arrays.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/arrays.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 16,
+                        "endLine": 10,
+                        "endColumn": 19,
+                        "endOffset": 319
+                    }
                 }
             },
             {
@@ -24,7 +32,14 @@
                     "endOffset": 412
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/colors.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 53,
+                        "endOffset": 156
+                    }
                 }
             },
             {
@@ -36,7 +51,14 @@
                     "endOffset": 464
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/colors.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 51,
+                        "endOffset": 102
+                    }
                 }
             },
             {
@@ -44,126 +66,190 @@
                     "startLine": 14,
                     "startColumn": 4,
                     "startOffset": 469,
-                    "endColumn": 48,
-                    "endOffset": 513
+                    "endColumn": 42,
+                    "endOffset": 507
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/integers.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 16,
+                        "endColumn": 42,
+                        "endOffset": 54
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 518,
+                    "startOffset": 512,
                     "endColumn": 48,
-                    "endOffset": 562
+                    "endOffset": 556
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/integers.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 567,
-                    "endLine": 19,
-                    "endColumn": 13,
-                    "endOffset": 953
+                    "startOffset": 561,
+                    "endColumn": 48,
+                    "endOffset": 605
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 16,
+                        "endColumn": 48,
+                        "endOffset": 60
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 958,
-                    "endColumn": 37,
-                    "endOffset": 991
+                    "startOffset": 610,
+                    "endLine": 20,
+                    "endColumn": 13,
+                    "endOffset": 996
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 640,
+                        "endLine": 14,
+                        "endColumn": 13,
+                        "endOffset": 1026
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 996,
-                    "endColumn": 116,
-                    "endOffset": 1108
+                    "startOffset": 1001,
+                    "endColumn": 37,
+                    "endOffset": 1034
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1269,
+                        "endColumn": 37,
+                        "endOffset": 1302
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1113,
-                    "endColumn": 61,
-                    "endOffset": 1170
+                    "startOffset": 1039,
+                    "endColumn": 116,
+                    "endOffset": 1151
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1307,
+                        "endColumn": 116,
+                        "endOffset": 1419
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1175,
-                    "endColumn": 62,
-                    "endOffset": 1233
+                    "startOffset": 1156,
+                    "endColumn": 61,
+                    "endOffset": 1213
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 370,
+                        "endColumn": 61,
+                        "endOffset": 427
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1238,
-                    "endColumn": 66,
-                    "endOffset": 1300
+                    "startOffset": 1218,
+                    "endColumn": 62,
+                    "endOffset": 1276
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1206,
+                        "endColumn": 62,
+                        "endOffset": 1264
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1305,
-                    "endColumn": 52,
-                    "endOffset": 1353
+                    "startOffset": 1281,
+                    "endColumn": 66,
+                    "endOffset": 1343
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1031,
+                        "endColumn": 66,
+                        "endOffset": 1093
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1358,
-                    "endColumn": 75,
-                    "endOffset": 1429
+                    "startOffset": 1348,
+                    "endColumn": 52,
+                    "endOffset": 1396
                 },
                 "from": {
                     "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 562,
-                        "endColumn": 75,
-                        "endOffset": 633
+                        "startOffset": 65,
+                        "endColumn": 52,
+                        "endOffset": 113
                     }
                 }
             },
@@ -171,115 +257,230 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1434,
+                    "startOffset": 1401,
+                    "endLine": 115,
+                    "endColumn": 13,
+                    "endOffset": 7201
+                },
+                "from": {
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1580,
+                        "endLine": 110,
+                        "endColumn": 13,
+                        "endOffset": 7380
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 7206,
+                    "endColumn": 75,
+                    "endOffset": 7277
+                },
+                "from": {
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 564,
+                        "endColumn": 75,
+                        "endOffset": 635
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 7282,
                     "endColumn": 74,
-                    "endOffset": 1504
+                    "endOffset": 7352
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 236,
+                        "endColumn": 74,
+                        "endOffset": 306
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 1509,
+                    "startOffset": 7357,
                     "endColumn": 57,
-                    "endOffset": 1562
+                    "endOffset": 7410
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 118,
+                        "endColumn": 57,
+                        "endOffset": 171
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 1567,
+                    "startOffset": 7415,
                     "endColumn": 62,
-                    "endOffset": 1625
-                },
-                "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 1630,
-                    "endColumn": 58,
-                    "endOffset": 1684
-                },
-                "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 1689,
-                    "endColumn": 68,
-                    "endOffset": 1753
+                    "endOffset": 7473
                 },
                 "from": {
                     "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 493,
-                        "endColumn": 68,
-                        "endOffset": 557
+                        "startOffset": 432,
+                        "endColumn": 62,
+                        "endOffset": 490
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 1758,
+                    "startOffset": 7478,
+                    "endColumn": 58,
+                    "endOffset": 7532
+                },
+                "from": {
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 311,
+                        "endColumn": 58,
+                        "endOffset": 365
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 7537,
+                    "endColumn": 68,
+                    "endOffset": 7601
+                },
+                "from": {
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 495,
+                        "endColumn": 68,
+                        "endOffset": 559
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 7606,
                     "endColumn": 86,
-                    "endOffset": 1840
+                    "endOffset": 7688
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1424,
+                        "endColumn": 86,
+                        "endOffset": 1506
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 1845,
+                    "startOffset": 7693,
+                    "endColumn": 68,
+                    "endOffset": 7757
+                },
+                "from": {
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1511,
+                        "endColumn": 68,
+                        "endOffset": 1575
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 7762,
                     "endColumn": 59,
-                    "endOffset": 1900
+                    "endOffset": 7817
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 176,
+                        "endColumn": 59,
+                        "endOffset": 231
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 1905,
+                    "startOffset": 7822,
                     "endColumn": 107,
-                    "endOffset": 2008
+                    "endOffset": 7925
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1098,
+                        "endColumn": 107,
+                        "endOffset": 1201
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 2013,
+                    "startOffset": 7930,
                     "endColumn": 57,
-                    "endOffset": 2066
+                    "endOffset": 7983
                 },
                 "from": {
-                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/styles.xml"
+                    "file": "/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 58,
+                        "endOffset": 71
+                    }
                 }
             }
         ]

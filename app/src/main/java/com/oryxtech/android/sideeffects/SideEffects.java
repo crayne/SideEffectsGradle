@@ -1,11 +1,8 @@
 package com.oryxtech.android.sideeffects;
 
-import java.util.ArrayList;
-
-import android.os.Bundle;
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -14,11 +11,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.AdapterView.OnItemClickListener;
+
+import java.util.ArrayList;
 
 public class SideEffects extends Activity {
 	Activity CurrentActivity;
@@ -38,8 +37,6 @@ public class SideEffects extends Activity {
         medListStorage = new MedListStorage(CurrentActivity);
 
         setContentView(R.layout.activity_sideeffects);
-        ActionBar actionBar = getActionBar();
-        actionBar.hide();
      // Get a reference to the AutoCompleteTextView in the layout
         autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autocomplete_medications);
         // Get the string array
@@ -70,6 +67,9 @@ public class SideEffects extends Activity {
 		medListStorage.restoreMedList(myMedicationListItems, myMedicationListAdapter, myMedicationListView);
 		Button symptomScreenButton =  (Button)CurrentActivity.findViewById(R.id.symptom_screen_button_id);
 		symptomScreenButton.setOnClickListener(symptomScreenButtonClickListener);
+
+		Button interactionsButton = (Button)CurrentActivity.findViewById(R.id.interactions_button_id);
+		interactionsButton.setOnClickListener(interactionsButtonClickListener);
 
     }
 
@@ -119,9 +119,28 @@ public class SideEffects extends Activity {
 				intent.putExtra("com.oryx.allaboard.MedicationArray", myMedicationListArray); 
 				CurrentActivity.startActivity(intent);
 		    }
- 	};  
-    
-    final TextWatcher autoCompleteTextChecker = new TextWatcher() {  
+ 	};
+
+	private OnClickListener interactionsButtonClickListener = new OnClickListener() {
+		public void onClick(View v) {
+			new Alert("In interactionsButtonClickListener");
+			//If there are no medications, do nothing
+			int numMeds = myMedicationListAdapter.getCount();
+			if (numMeds == 0){
+				new Alert("Please pick one or more medications before searching by symptom");
+				return;
+			}
+			Intent intent = new Intent();
+			intent.setClassName("com.oryxtech.android.sideeffects",
+					"com.oryxtech.android.sideeffects.Interactions");
+			//key-value pair, where key needs current package prefix
+			String[] myMedicationListArray = myMedicationListItems.toArray(new String[myMedicationListItems.size()]);
+			intent.putExtra("com.oryxtech.android.sideeffects.MedicationArray", myMedicationListArray);
+			CurrentActivity.startActivity(intent);
+		}
+	};
+
+	final TextWatcher autoCompleteTextChecker = new TextWatcher() {
         public void afterTextChanged(Editable s) {}  
       
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {}  
