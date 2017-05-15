@@ -18,7 +18,10 @@ android {
     }
 }
 
+
+
 dependencies {
     compile files('libs/apache-commons-lang.jar')
     compile 'com.android.support:support-v4:18.0.0'
+    compile('com.googlecode.json-simple:json-simple:1.1.1')
 }

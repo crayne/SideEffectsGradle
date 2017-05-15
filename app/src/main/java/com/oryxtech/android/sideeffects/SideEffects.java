@@ -123,7 +123,7 @@ public class SideEffects extends Activity {
 
 	private OnClickListener interactionsButtonClickListener = new OnClickListener() {
 		public void onClick(View v) {
-			new Alert("In interactionsButtonClickListener");
+			//new Alert("In interactionsButtonClickListener");
 			//If there are no medications, do nothing
 			int numMeds = myMedicationListAdapter.getCount();
 			if (numMeds == 0){
