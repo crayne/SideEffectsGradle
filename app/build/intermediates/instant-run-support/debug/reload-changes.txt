@@ -1,2 +1,4 @@
 CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/Interactions$InteractionRequestTask$override.class
+CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/Interactions$override.class
 CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/Interactions$1$override.class

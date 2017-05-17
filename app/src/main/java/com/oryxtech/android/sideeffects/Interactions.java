@@ -12,12 +12,25 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
+
+/*
+ * Medication interactions to test with:
+ *
+ * saquinavir / formoterol fumarate -- interaction list item is good
+ * fentanyl / saquinavir -- interaction list item is good
+ * atazanavir / prilosec -- interaction list item is good
+ * fluoxetine / nardil -- interaction list item is good
+ */
 
 public class Interactions extends Activity {
     String[] medicationArray;
     Activity currentActivity = this;
+    ArrayList<String> severityArrayList = new ArrayList<String>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +53,11 @@ public class Interactions extends Activity {
     }
 
     protected void getInteractions(String rowTitleString){
+        try {
+            rowTitleString = URLEncoder.encode(rowTitleString, "UTF-8");
+        } catch (UnsupportedEncodingException ex) {
+            ex.printStackTrace();
+        }
         String completeSearchUrl = Utils.localHost + Utils.getInteractionsPhpUrl;
         completeSearchUrl = completeSearchUrl + "?medNames=" + rowTitleString;
         new InteractionRequestTask().execute(completeSearchUrl);
@@ -75,9 +93,9 @@ public class Interactions extends Activity {
                 System.out.println("Error parsing interactions result " + e.getMessage());
             }
 
-            ArrayList<String> severityArrayList = new ArrayList<String>();
             //Getting severities for first and second interactions correctly
             //Works for 2 medications, not for 4
+            //
     		for (int i=0; i<jsonArray.size(); i+=2) {
                 //jsonArray[i].severity = jsonArray[i].severity[0];
 
@@ -90,16 +108,26 @@ public class Interactions extends Activity {
                 String severity2 = (String) severityObject2.get("0");
 
                 String listItem = "Severity of interaction between ";
-                if (severity2.equals("N/A")) continue;
-                String originalDrugName1 = getJSONAttribute(jObject1, "originalDrugName1");
-                String originalDrugName2 = getJSONAttribute(jObject1, "originalDrugName2");
-                listItem += originalDrugName1 + " and " + originalDrugName2 + " is " + severity2;
+                //if (severity2.equals("N/A")) continue;
+                String drugName1 = getJSONAttribute(jObject1, "originalDrugName1");
+                if (drugName1 == null) drugName1 = getJSONAttribute(jObject1, "drug1");
+                String drugName2 = getJSONAttribute(jObject1, "originalDrugName2");
+                if (drugName2 == null) drugName2 = getJSONAttribute(jObject1, "drug2");
+
+                listItem += drugName1 + " and " + drugName2 + " is " + severity2 + ".  ";
+                JSONObject descriptionObject = (JSONObject) jObject1.get("descriptionText");
+                String description = (String) descriptionObject.get("0");
+                listItem += description;
                 severityArrayList.add(listItem);
 
 
 
             }
-
+            //severityArrayList can have size 0 - show alert
+            if (severityArrayList.isEmpty()){
+                new Alert("No interactions were found");
+                return;
+            }
 
         }
 
