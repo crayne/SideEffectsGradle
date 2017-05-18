@@ -95,17 +95,16 @@ public class Interactions extends Activity {
 
             //Getting severities for first and second interactions correctly
             //Works for 2 medications, not for 4
+            //TODO: skipping every other element is clearly wrong -- doesn't work for more than 2 medications
+            //TODO: look into a parameter in the url to eliminate second interactions of the same pair
+            //Need to add "&sources=DrugBank" to query in interactions.php, and then use every element -- eliminate severity
             //
-    		for (int i=0; i<jsonArray.size(); i+=2) {
+    		for (int i=0; i<jsonArray.size(); i++) {
                 //jsonArray[i].severity = jsonArray[i].severity[0];
 
                 JSONObject jObject1 = (JSONObject) jsonArray.get(i);
                 JSONObject severityObject1 = (JSONObject) jObject1.get("severity");
                 String severity1 = (String) severityObject1.get("0");
-
-                JSONObject jObject2 = (JSONObject) jsonArray.get(i + 1);
-                JSONObject severityObject2 = (JSONObject) jObject2.get("severity");
-                String severity2 = (String) severityObject2.get("0");
 
                 String listItem = "Severity of interaction between ";
                 //if (severity2.equals("N/A")) continue;
@@ -114,7 +113,7 @@ public class Interactions extends Activity {
                 String drugName2 = getJSONAttribute(jObject1, "originalDrugName2");
                 if (drugName2 == null) drugName2 = getJSONAttribute(jObject1, "drug2");
 
-                listItem += drugName1 + " and " + drugName2 + " is " + severity2 + ".  ";
+                listItem += drugName1 + " and " + drugName2 + " is " + severity1 + ".  ";
                 JSONObject descriptionObject = (JSONObject) jObject1.get("descriptionText");
                 String description = (String) descriptionObject.get("0");
                 listItem += description;
