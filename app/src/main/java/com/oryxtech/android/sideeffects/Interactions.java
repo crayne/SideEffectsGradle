@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -128,6 +129,9 @@ public class Interactions extends Activity {
                 return;
             }
 
+            TextView label = (TextView) currentActivity.findViewById(R.id.interactions_title);
+            label.setText("Interactions Between Your Medications");
+
         }
 
 /*
@@ -140,6 +144,7 @@ public class Interactions extends Activity {
             autoCompleteTextView.setAdapter(foundMedicationListAdapter);
             foundMedicationListAdapter.notifyDataSetChanged();
 */
+
         private String getJSONAttribute(JSONObject jsonObject, String attribute) {
             String attrValue = (String) jsonObject.get(attribute);
             return attrValue;
