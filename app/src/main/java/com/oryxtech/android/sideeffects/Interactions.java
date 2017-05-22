@@ -109,17 +109,17 @@ public class Interactions extends Activity {
                 JSONObject severityObject1 = (JSONObject) jObject1.get("severity");
                 String severity1 = (String) severityObject1.get("0");
 
-                String listItem = "Severity of interaction between ";
+                String listItem = "\nInteraction between ";
                 //if (severity2.equals("N/A")) continue;
                 String drugName1 = getJSONAttribute(jObject1, "originalDrugName1");
                 if (drugName1 == null) drugName1 = getJSONAttribute(jObject1, "drug1");
                 String drugName2 = getJSONAttribute(jObject1, "originalDrugName2");
                 if (drugName2 == null) drugName2 = getJSONAttribute(jObject1, "drug2");
 
-                listItem += drugName1 + " and " + drugName2 + " is " + severity1 + ".  ";
+                listItem += drugName1 + " and " + drugName2 + ": ";
                 JSONObject descriptionObject = (JSONObject) jObject1.get("descriptionText");
                 String description = (String) descriptionObject.get("0");
-                listItem += description;
+                listItem += description + "\n";
                 interactionsArrayList.add(listItem);
 
 

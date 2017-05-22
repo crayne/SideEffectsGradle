@@ -1,13 +1,2 @@
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/R$style$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/R$menu$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/MedListArrayAdapter$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/SymptomsForMedicationScreen$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/R$layout$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/Interactions$1$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/R$string$override.class
 CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/Interactions$InteractionRequestTask$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/Interactions$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/R$xml$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/R$id$override.class
-CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/oryxtech/android/sideeffects/R$integer$override.class
+CHANGED,/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
