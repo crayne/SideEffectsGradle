@@ -125,13 +125,15 @@ public class Interactions extends Activity {
 
 
             }
-            //interactionsArrayList can have size 0 - show alert
+
+            TextView label = (TextView) currentActivity.findViewById(R.id.interactions_title);
+
+            //interactionsArrayList can have size 0
             if (interactionsArrayList.isEmpty()){
-                new Alert("No interactions were found");
+                label.setText("No interactions between your medications have been found");
                 return;
             }
 
-            TextView label = (TextView) currentActivity.findViewById(R.id.interactions_title);
             label.setText("Interactions Between Your Medications");
 
 
