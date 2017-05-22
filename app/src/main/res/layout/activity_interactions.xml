@@ -43,7 +43,7 @@
 
 
     <ListView
-        android:id="@+id/symptoms_for_med_list"
+        android:id="@+id/interactions_list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:listSelector="@android:color/transparent"

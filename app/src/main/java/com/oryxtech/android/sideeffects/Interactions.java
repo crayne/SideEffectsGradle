@@ -5,7 +5,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import org.json.simple.JSONArray;
@@ -30,7 +32,7 @@ import java.util.ArrayList;
 public class Interactions extends Activity {
     String[] medicationArray;
     Activity currentActivity = this;
-    ArrayList<String> severityArrayList = new ArrayList<String>();
+    ArrayList<String> interactionsArrayList = new ArrayList<String>();
 
 
     @Override
@@ -118,19 +120,34 @@ public class Interactions extends Activity {
                 JSONObject descriptionObject = (JSONObject) jObject1.get("descriptionText");
                 String description = (String) descriptionObject.get("0");
                 listItem += description;
-                severityArrayList.add(listItem);
+                interactionsArrayList.add(listItem);
 
 
 
             }
-            //severityArrayList can have size 0 - show alert
-            if (severityArrayList.isEmpty()){
+            //interactionsArrayList can have size 0 - show alert
+            if (interactionsArrayList.isEmpty()){
                 new Alert("No interactions were found");
                 return;
             }
 
             TextView label = (TextView) currentActivity.findViewById(R.id.interactions_title);
             label.setText("Interactions Between Your Medications");
+
+
+            ArrayAdapter<String> interactionsListAdapter = new ArrayAdapter<String>(currentActivity,
+                    R.layout.symptoms_for_med_listitem);
+            ListView interactionsListView = (ListView) currentActivity
+                    .findViewById(R.id.interactions_list);
+            interactionsListView.setAdapter(interactionsListAdapter);
+
+            /* Now need to copy rows from interactionsArrayList */
+            for (int i=0; i<interactionsArrayList.size(); i++){
+                String rowText = interactionsArrayList.get(i);
+                interactionsListAdapter.add(rowText);
+
+            }
+            interactionsListAdapter.notifyDataSetChanged();
 
         }
 
