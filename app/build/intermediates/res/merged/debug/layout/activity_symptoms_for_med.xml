@@ -66,8 +66,9 @@
    
 	<ProgressBar android:indeterminate="true"
          android:layout_width="50dp" android:layout_height="50dp"
-         android:id="@+id/symptoms_for_medication" style="?android:attr/progressBarStyle"
-         android:gravity="center_vertical|center_horizontal"
+         android:id="@+id/symptoms_for_medication"
+		 style="@android:style/Widget.ProgressBar.Large.Inverse"
+		 android:gravity="center_vertical|center_horizontal"
          android:layout_centerVertical="true"
          android:layout_centerHorizontal="true"
          android:visibility="invisible"
