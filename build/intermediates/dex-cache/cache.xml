@@ -1,2 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_a5af848ca99eeb55da8fc6c9043e7add3845ca5e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/libs/apache-commons-lang.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0ce1edb914c94ebc388f086c6827e8bdeec71ac2">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/2/apache-commons-lang_6c3086479658d5557fcd6b40df0b8eb49d4caf8e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/susancrayne/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c9ad4a0850ab676c5c64461a05ca524cdfff59f1">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/json-simple-1.1.1_c1f0022e1e55e6309b6f2072e89c624d331a7f5e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/susancrayne/AndroidSdkR20.0.3/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_5159e8a07ce97c7c3ed3a4e11aeb3e1443f83ad2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/susancrayne/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e4f1766ce7404a08f45d859fb9c226fc9e41a861">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/junit-4.10_b7085e73af6d030d72f66a83ae65a6a07ff840d6/classes.dex" />
+    </item>
+    <item
+        jar="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2f437bb60fbee5d3c0571a34c316912a24e2abf3">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_233e0c3ce680036b7b09b78d21fbb7a39c4f47b5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="245f0441d68fc5a2598051f8f7a48b165618ab02">
+        <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9b88c94d196ece1b6b79498b504de50cd9d90b24/classes.dex" />
+    </item>
+
+</items>

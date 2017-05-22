@@ -8,6 +8,7 @@ android {
         applicationId "com.oryxtech.android.sideeffects"
         minSdkVersion 15
         targetSdkVersion 16
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -18,10 +19,8 @@ android {
     }
 }
 
-
-
 dependencies {
     compile files('libs/apache-commons-lang.jar')
     compile 'com.android.support:support-v4:18.0.0'
-    compile('com.googlecode.json-simple:json-simple:1.1.1')
+    compile('com.googlecode.json-simple:json-simple:1.1.1'){ exclude group: 'org.hamcrest', module: 'hamcrest-core' }
 }
