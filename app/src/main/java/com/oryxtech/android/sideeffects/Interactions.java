@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import org.json.simple.JSONArray;
@@ -33,7 +34,7 @@ public class Interactions extends Activity {
     String[] medicationArray;
     Activity currentActivity = this;
     ArrayList<String> interactionsArrayList = new ArrayList<String>();
-
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +77,13 @@ public class Interactions extends Activity {
     class InteractionRequestTask extends HttpRequestTask{
 
         @Override
+
+        protected void onPreExecute(){
+            super.onPreExecute();
+            progressBar = (ProgressBar)findViewById(R.id.interactions_progress_bar);
+            progressBar.setVisibility(View.VISIBLE);
+
+        }
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             if (result.startsWith("Error")){
@@ -125,6 +133,7 @@ public class Interactions extends Activity {
 
 
             }
+            progressBar.setVisibility(View.INVISIBLE);
 
             TextView label = (TextView) currentActivity.findViewById(R.id.interactions_title);
 
