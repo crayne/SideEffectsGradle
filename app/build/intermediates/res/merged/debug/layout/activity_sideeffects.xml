@@ -5,132 +5,143 @@
     android:orientation="vertical"
     android:background="@color/screen_background">
         
-    
- 	<AutoCompleteTextView 
-    	android:id="@+id/autocomplete_medications"
-    	android:layout_width="fill_parent"
-    	android:layout_height="40sp"
-    	android:hint="@string/enter_medication"
-    	android:inputType="text"
-    	android:textSize="20sp"
-        android:typeface="sans"
-        android:layout_marginLeft="8sp"
-        android:layout_marginRight="8sp"
-        android:layout_marginTop="6sp"             
-        android:background="@drawable/autocomplete_shape"
-    	android:imeOptions="actionNext" />
+    <RelativeLayout
+        android:id="@+id/main_top_part"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+ 	    <AutoCompleteTextView
+            android:id="@+id/autocomplete_medications"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="@string/enter_medication"
+            android:inputType="text"
+            android:textSize="20dp"
+            android:typeface="sans"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/autocomplete_shape"
+            android:imeOptions="actionNext" />
  	
- 	<Button
-	    android:id="@+id/autocomplete_medications_delete_button"
-	    android:layout_width="30sp"
-	    android:layout_height="40sp"
-        android:layout_alignParentRight="true"
-        android:text="X"
-        android:textColor="@color/screen_background" 
-        android:textSize="18sp"
-        android:typeface="sans"
-        android:layout_marginLeft="8sp"
-        android:layout_marginRight="8sp" 
-        android:layout_marginTop="6sp"      
-        android:background="@drawable/autocomplete_delete_button" />
-	
- 	<TextView
-        android:id="@+id/my_medications_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="8sp"
-        android:paddingRight="10sp"
-        android:text="@string/my_medications_text"
-        android:textSize="22sp"
-        android:layout_centerHorizontal = "true"
-        android:layout_marginTop="15sp"
-        android:layout_below="@id/autocomplete_medications"
-        
+ 	    <Button
+            android:id="@+id/autocomplete_medications_delete_button"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text="X"
+            android:textColor="@color/screen_background"
+            android:textSize="18dp"
+            android:typeface="sans"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/autocomplete_delete_button" />
+
+ 	    <TextView
+            android:id="@+id/my_medications_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:text="@string/my_medications_text"
+            android:textSize="22dp"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/autocomplete_medications"
      />
+     </RelativeLayout>
  	
     <!-- Scrolling List of Medications -->
-
-   <ListView
-        android:id="@+id/medication_list"
-        android:layout_width="fill_parent"
-        android:layout_height="190dp"
-        android:listSelector="@android:color/transparent"
-        android:paddingLeft="4sp"
-        android:paddingRight="4sp"
-        android:paddingTop="1sp"
-        android:layout_marginLeft="8sp"
-        android:layout_marginRight="8sp"
-        android:layout_marginTop="10sp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="sans"        
-        android:background="@color/med_list_background"
-        android:layout_below="@id/my_medications_id"
-        android:divider="@color/screen_background"
-        android:dividerHeight="1sp"
+     <RelativeLayout
+         android:id="@+id/main_middle_part"
+         android:layout_below="@id/main_top_part"
+         android:layout_width="match_parent"
+         android:layout_height="182dp">
+       <ListView
+            android:id="@+id/medication_list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:background="@color/med_list_background"
+            android:divider="@color/screen_background"
+            android:dividerHeight="1dp"
 	    />
-   <!-- Interactions Button -->
-	<Button
-		android:id="@+id/interactions_button_id"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:background="@drawable/sideeffects_button_shape"
-		android:layout_centerHorizontal = "true"
-		android:text="@string/medication_interactions"
-		android:textColor="@color/screen_background"
-		android:layout_marginBottom="10sp"
-		android:layout_marginTop="20sp"
-		android:layout_marginLeft="8sp"
-		android:layout_marginRight="8sp"
-		android:paddingLeft="10sp"
-		android:paddingRight="10sp"
-		android:textSize="22sp"
-		android:typeface="sans"
-		android:textStyle="normal"
-		android:layout_below="@id/medication_list"
+     </RelativeLayout>
 
-		/>
+      <RelativeLayout
+          android:id="@+id/main_bottom_part"
+          android:layout_below="@id/main_top_part"
+          android:layout_alignParentBottom="true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <!-- Attribution Label -->
+         <TextView
+            android:id="@+id/attribution_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:text="@string/attribution_label"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:typeface="sans"
+            android:layout_alignParentBottom="true"
+            />
 
 
-	<!-- Next Screen Button -->
-      <Button
-        android:id="@+id/symptom_screen_button_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/sideeffects_button_shape"
-        android:layout_centerHorizontal = "true"
-        android:text="@string/search_symptom"
-        android:textColor="@color/screen_background" 
-        android:layout_marginBottom="10sp"
-        android:layout_marginTop="20sp"
-        android:layout_marginLeft="8sp"
-        android:layout_marginRight="8sp"
-        android:paddingLeft="10sp"
-        android:paddingRight="10sp"
-        android:textSize="22sp"
-        android:typeface="sans"       
-        android:textStyle="normal"
-        android:layout_below="@id/interactions_button_id"
-        
-         />
-      
-    <!-- Attribution Label -->
 
-    <TextView
-        android:id="@+id/attribution_label_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="8sp"
-        android:paddingRight="10sp"
-        android:text="@string/attribution_label"
-        android:textSize="12sp"
-        android:textStyle="normal"
-        android:layout_marginTop="10sp"
-        android:layout_marginBottom="5sp"
-        android:typeface="sans"
-        android:layout_alignParentBottom="true"
-        />  
- 
+        <!-- Interactions Button -->
+        <Button
+            android:id="@+id/interactions_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sideeffects_button_shape"
+            android:layout_centerHorizontal = "true"
+            android:text="@string/medication_interactions"
+            android:textColor="@color/screen_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="22dp"
+            android:typeface="sans"
+            android:textStyle="normal"
+            android:layout_above="@id/attribution_label_id"
 
- 	
+            />
+
+        <!-- Symptom Screen Button -->
+        <Button
+            android:id="@+id/symptom_screen_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sideeffects_button_shape"
+            android:layout_centerHorizontal = "true"
+            android:text="@string/search_symptom"
+            android:textColor="@color/screen_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="22dp"
+            android:typeface="sans"
+            android:textStyle="normal"
+            android:layout_above="@id/interactions_button_id"
+            />
+      </RelativeLayout>
+
+
 </RelativeLayout>
