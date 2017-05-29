@@ -79,7 +79,7 @@
 
       <RelativeLayout
           android:id="@+id/main_bottom_part"
-          android:layout_below="@id/main_top_part"
+          android:layout_below="@id/main_middle_part"
           android:layout_alignParentBottom="true"
           android:layout_width="match_parent"
           android:layout_height="wrap_content">
@@ -105,7 +105,7 @@
         <Button
             android:id="@+id/interactions_button_id"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:background="@drawable/sideeffects_button_shape"
             android:layout_centerHorizontal = "true"
             android:text="@string/medication_interactions"
@@ -126,7 +126,7 @@
         <Button
             android:id="@+id/symptom_screen_button_id"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:background="@drawable/sideeffects_button_shape"
             android:layout_centerHorizontal = "true"
             android:text="@string/search_symptom"
@@ -140,7 +140,8 @@
             android:typeface="sans"
             android:textStyle="normal"
             android:layout_above="@id/interactions_button_id"
-            />
+            android:focusableInTouchMode="true"
+            android:layout_alignParentTop="false" />
       </RelativeLayout>
 
 

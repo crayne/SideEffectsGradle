@@ -4,12 +4,12 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="534049183180551"
+    timestamp="618337087369278"
     token="-4487121610070956357" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="773" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -20,20 +20,22 @@
         name="verifier"
         duration="0" />
 
-    <build timestamp="529986895798838" >
+    <artifact
+        location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
+
+    <build timestamp="617723538658177" >
         <artifact
-            location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/outputs/apk/app-debug.apk"
-            type="MAIN" />
-    </build>
-    <build timestamp="533826274193409" >
+            location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
         <artifact
-            location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
             type="DEX" />
         <artifact
             location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
             type="DEX" />
         <artifact
-            location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
             type="DEX" />
         <artifact
             location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
@@ -78,11 +80,10 @@
             location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/2/apache-commons-lang_6c3086479658d5557fcd6b40df0b8eb49d4caf8e/classes.dex"
             type="DEX" />
     </build>
-    <build timestamp="534028711703089" >
+    <build timestamp="618337087369278" >
         <artifact
             location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />
     </build>
-    <build timestamp="534049183180551" />
 
 </instant-run>
