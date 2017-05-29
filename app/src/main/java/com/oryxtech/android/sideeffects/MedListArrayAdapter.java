@@ -61,27 +61,24 @@ public class MedListArrayAdapter extends ArrayAdapter<String> {
 				return true;
 			}
 		  });
-        /*
-		textView.setOnTouchListener(new OnTouchListener() {
+
+  		textView.setOnTouchListener(new OnTouchListener() {
 			@Override
 			public boolean onTouch(View arg0, MotionEvent arg1) {
-				String medName = (String) values.get(fPosition);
-		        //Start activity that lists all symptoms and frequencies for the medication name in "selection"
-		    	Intent intent = new Intent();
+				if (arg1.getAction() != MotionEvent.ACTION_UP) return true;
+				//Get the correct position of the row to delete
+				int index = getIndexForRow(arg0);
+				String medName = (String) values.get(index);
+				//Start activity that lists all symptoms and frequencies for the medication name in "selection"
+				Intent intent = new Intent();
 				intent.setClassName("com.oryxtech.android.sideeffects",
 						"com.oryxtech.android.sideeffects.SymptomsForMedicationScreen");
 				//key-value pair, where key needs current package prefix
-				intent.putExtra("com.oryx.allaboard.CurrentMedication", medName); 
+				intent.putExtra("com.oryx.allaboard.CurrentMedication", medName);
 				CurrentActivity.startActivity(intent);
-
-				return false;
+				return true;
 			}
-		  });
-		  */
-        textView.setOnClickListener(medicineClickListener);
-
-
-
+		});
         return rowView;
 	}
 
@@ -103,19 +100,4 @@ public class MedListArrayAdapter extends ArrayAdapter<String> {
 		}
 		return -1;
 	}
-
-    private View.OnClickListener medicineClickListener = new View.OnClickListener() {
-        public void onClick(View v) {
-            String medName = (String) values.get(fPosition);
-            //Start activity that lists all symptoms and frequencies for the medication name in "selection"
-            Intent intent = new Intent();
-            intent.setClassName("com.oryxtech.android.sideeffects",
-                    "com.oryxtech.android.sideeffects.SymptomsForMedicationScreen");
-            //key-value pair, where key needs current package prefix
-            intent.putExtra("com.oryx.allaboard.CurrentMedication", medName);
-            CurrentActivity.startActivity(intent);
-
-        }
-    };
-
 }
