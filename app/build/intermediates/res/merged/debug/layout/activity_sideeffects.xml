@@ -83,6 +83,47 @@
           android:layout_alignParentBottom="true"
           android:layout_width="match_parent"
           android:layout_height="wrap_content">
+
+          <!-- Symptom Screen Button -->
+          <Button
+              android:id="@+id/symptom_screen_button_id"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:background="@drawable/sideeffects_button_shape"
+              android:layout_centerHorizontal = "true"
+              android:text="@string/search_symptom"
+              android:textColor="@color/screen_background"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="8dp"
+              android:layout_marginRight="8dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:textSize="22dp"
+              android:typeface="sans"
+              android:textStyle="normal"
+              android:focusableInTouchMode="true"
+              android:layout_alignParentTop="true" />
+
+          <!-- Interactions Button -->
+          <Button
+              android:id="@+id/interactions_button_id"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:background="@drawable/sideeffects_button_shape"
+              android:layout_centerHorizontal = "true"
+              android:text="@string/medication_interactions"
+              android:textColor="@color/screen_background"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="8dp"
+              android:layout_marginRight="8dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:textSize="22dp"
+              android:typeface="sans"
+              android:textStyle="normal"
+              android:layout_below="@id/symptom_screen_button_id"
+              />
+
          <!-- Attribution Label -->
          <TextView
             android:id="@+id/attribution_label_id"
@@ -100,48 +141,6 @@
             />
 
 
-
-        <!-- Interactions Button -->
-        <Button
-            android:id="@+id/interactions_button_id"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:background="@drawable/sideeffects_button_shape"
-            android:layout_centerHorizontal = "true"
-            android:text="@string/medication_interactions"
-            android:textColor="@color/screen_background"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:textSize="22dp"
-            android:typeface="sans"
-            android:textStyle="normal"
-            android:layout_above="@id/attribution_label_id"
-
-            />
-
-        <!-- Symptom Screen Button -->
-        <Button
-            android:id="@+id/symptom_screen_button_id"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:background="@drawable/sideeffects_button_shape"
-            android:layout_centerHorizontal = "true"
-            android:text="@string/search_symptom"
-            android:textColor="@color/screen_background"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:textSize="22dp"
-            android:typeface="sans"
-            android:textStyle="normal"
-            android:layout_above="@id/interactions_button_id"
-            android:focusableInTouchMode="true"
-            android:layout_alignParentTop="false" />
       </RelativeLayout>
 
 

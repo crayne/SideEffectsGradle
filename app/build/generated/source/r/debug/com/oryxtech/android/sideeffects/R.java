@@ -30,7 +30,7 @@ public final class R {
         public static final int sideeffects_button_shape=0x7f020006;
     }
     public static final class id {
-        public static final int attribution_label_id=0x7f0c000b;
+        public static final int attribution_label_id=0x7f0c000d;
         public static final int autocomplete_medications=0x7f0c0005;
         public static final int autocomplete_medications_delete_button=0x7f0c0006;
         public static final int autocomplete_symptoms=0x7f0c000e;
@@ -51,7 +51,7 @@ public final class R {
         public static final int menu_settings=0x7f0c0019;
         public static final int my_medications_id=0x7f0c0007;
         public static final int send_to_doctor=0x7f0c0013;
-        public static final int symptom_screen_button_id=0x7f0c000d;
+        public static final int symptom_screen_button_id=0x7f0c000b;
         public static final int symptoms=0x7f0c0012;
         public static final int symptoms_for_med_list=0x7f0c0015;
         public static final int symptoms_for_medication=0x7f0c0016;
