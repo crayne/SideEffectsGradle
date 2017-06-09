@@ -62,7 +62,7 @@ public class Interactions extends Activity {
         } catch (UnsupportedEncodingException ex) {
             ex.printStackTrace();
         }
-        String completeSearchUrl = Utils.localHost + Utils.getInteractionsPhpUrl;
+        String completeSearchUrl = Utils.interactionsUrl + Utils.getInteractionsPhpUrl;
         completeSearchUrl = completeSearchUrl + "?medNames=" + rowTitleString;
         new InteractionRequestTask().execute(completeSearchUrl);
     }

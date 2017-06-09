@@ -17,7 +17,7 @@ import android.widget.Toast;
  */
 public class Utils {
 	public static Activity CurrentActivity;
-    public static int maxMedlistRows = 7;
+    public static int maxMedlistRows = 4;
 	//Now using latest database (local) called sideEffects3
 	public static String urlBase =  "http://192.168.1.170:8080/sideEffects";
 	//public static String urlBase =  "http://www.oryxtech.net/sideEffects";
@@ -32,7 +32,7 @@ public class Utils {
 
     //This is the test version
     //static String freqFormat =  "multi";
-    public static String urlHost = null;
+    public static String interactionsUrl = "http://192.168.1.170:8080/sideEffectsNewRxnav";
     public static String localHost =  "http://192.168.1.170:8080/sideEffectsNewRxnav";
     public static String serverHost = "http://www.oryxtech.net/sideEffectsNewRxnav";
     public static String nuiUrl =  "http://rxnav.nlm.nih.gov/REST/search?conceptName=";
@@ -53,6 +53,7 @@ public class Utils {
         System.out.println("In setListViewHeight, maxRows = " + maxRows);
 
         int limit = listAdapter.getCount();
+        //if (limit > maxRows) return;
         if (limit > maxRows) limit = maxRows;
         System.out.println("In setListViewHeight, limit = " + limit);
         int totalHeight = 0;
