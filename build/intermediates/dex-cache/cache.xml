@@ -40,14 +40,14 @@
         jar="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="296f6d7700da3a812b6731528808e1201f2b9db8">
+        sha1="a1f7e4f9fa45ccd3e07a6f6992d5adc0d1d64447">
         <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_233e0c3ce680036b7b09b78d21fbb7a39c4f47b5/classes.dex" />
     </item>
     <item
         jar="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="5f73449f9191d23036928dd49cbfdea17add5604">
+        sha1="f145d0fb20e0009e46a11bb8b214f011a14fbd06">
         <dex dex="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9b88c94d196ece1b6b79498b504de50cd9d90b24/classes.dex" />
     </item>
 

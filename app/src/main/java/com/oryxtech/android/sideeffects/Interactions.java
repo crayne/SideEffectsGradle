@@ -103,6 +103,9 @@ public class Interactions extends Activity {
             catch(ParseException e){
                 System.out.println("Error parsing interactions result " + e.getMessage());
             }
+            catch(ClassCastException e){
+                System.out.println("Class Cast Exception parsing interactions result " + e.getMessage());
+            }
 
             //Getting severities for first and second interactions correctly
             //Works for 2 medications, not for 4
