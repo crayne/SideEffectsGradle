@@ -2,9 +2,9 @@
 <instant-run
     abi="x86"
     api-level="23"
-    density="xhdpi"
+    density="xxxhdpi"
     format="7"
-    timestamp="883910064054994"
+    timestamp="7886821272285"
     token="-4487121610070956357" >
 
     <task
@@ -15,11 +15,19 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="24" />
     <task
         name="verifier"
-        duration="0" />
+        duration="8" />
 
-    <build timestamp="883910064054994" />
+    <artifact
+        location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="7886821272285" >
+        <artifact
+            location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
 
 </instant-run>

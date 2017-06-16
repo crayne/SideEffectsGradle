@@ -1,9 +1,9 @@
 package com.oryxtech.android.sideeffects;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
+import android.app.Activity;
+import android.os.AsyncTask;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -14,11 +14,10 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-import android.app.Activity;
-import android.os.AsyncTask;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import android.widget.Toast;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 
 /*
@@ -63,9 +62,9 @@ public class GetAllMedications {
 				HttpUriRequest request = (HttpUriRequest) new HttpGet(uri[0]);
 				response = httpclient.execute(request);
 			} catch (ClientProtocolException e) {
-                return "Error connecting to database";
+                return "Client protocol error executing request";
 			} catch (IOException e) {
-                return "Error connecting to database";
+                return "IO error connecting to database";
 			}
 		    StatusLine statusLine = response.getStatusLine();
 		    if(statusLine.getStatusCode() == HttpStatus.SC_OK){
