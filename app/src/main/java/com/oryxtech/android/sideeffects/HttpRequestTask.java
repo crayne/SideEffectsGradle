@@ -1,17 +1,17 @@
 package com.oryxtech.android.sideeffects;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+import android.os.AsyncTask;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.StatusLine;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.DefaultHttpClient;
-import android.os.AsyncTask;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 public class HttpRequestTask extends AsyncTask<String, String, String>{
     @Override
@@ -23,25 +23,22 @@ public class HttpRequestTask extends AsyncTask<String, String, String>{
 		try {
 			HttpUriRequest request = new HttpGet(uri[0]);
 			response = httpclient.execute(request);
-		} catch (ClientProtocolException e) {
+		} catch (Exception e) {
 			//e.printStackTrace();
-            return "Error connecting to database";
-		} catch (IOException e) {
-			e.printStackTrace();
-            return "Error connecting to database";
-        }
+            return "Error connecting to back end is: " + e.getMessage();
+		}
 	    StatusLine statusLine = response.getStatusLine();
 	    if(statusLine.getStatusCode() == HttpStatus.SC_OK){
 	        ByteArrayOutputStream out = new ByteArrayOutputStream();
 	        try {
 				response.getEntity().writeTo(out);
 			} catch (IOException e) {
-                return "Error connecting to database";
+                return "Error writing response is " + e.getMessage();
             }
 	        try {
 				out.close();
 			} catch (IOException e) {
-                return "Error closing the database";
+                return "Error closing output stream is " + e.getMessage();
 
             }
 	        String responseString = out.toString();
@@ -51,15 +48,13 @@ public class HttpRequestTask extends AsyncTask<String, String, String>{
 	        //Closes the connection.
 	        try {
 				response.getEntity().getContent().close();
-			} catch (IllegalStateException e) {
-                return "Error closing database connection";
-			} catch (IOException e) {
-                return "Error closing database connection";
+			} catch (Exception e) {
+                return "Error closing connection is " + e.getMessage();
 			}
 	        try {
 				throw new IOException(statusLine.getReasonPhrase());
 			} catch (IOException e) {
-                return "Error closing database connection";
+                return "Error gettin reason phrase is " + e.getMessage();
 			}
 	    }
 	}

@@ -62,9 +62,9 @@ public class GetAllMedications {
 				HttpUriRequest request = (HttpUriRequest) new HttpGet(uri[0]);
 				response = httpclient.execute(request);
 			} catch (ClientProtocolException e) {
-                return "Client protocol error executing request";
+                return "Error in Client protocol executing request is " + e.getMessage();
 			} catch (IOException e) {
-                return "IO error connecting to database";
+                return "Error in IO executing request is " + e.getMessage();
 			}
 		    StatusLine statusLine = response.getStatusLine();
 		    if(statusLine.getStatusCode() == HttpStatus.SC_OK){
@@ -72,12 +72,12 @@ public class GetAllMedications {
 		        try {
 					response.getEntity().writeTo(out);
 				} catch (IOException e) {
-                    return "Error connecting to database";
+                    return "Error in IO writing response " + e.getMessage();
 				}
 		        try {
 					out.close();
 				} catch (IOException e) {
-                    return "Error closing the database";
+                    return "Error closing output stream: " + e.getMessage();
 				}
 		        String responseString = out.toString();
 		        return responseString;
@@ -86,15 +86,13 @@ public class GetAllMedications {
 		        //Closes the connection.
 		        try {
 					response.getEntity().getContent().close();
-				} catch (IllegalStateException e) {
-                    return "Error closing database connection";
-				} catch (IOException e) {
-                    return "Error closing database connection";
+				} catch (Exception e) {
+                    return "Error closing connection is " + e.getMessage();
 				}
 		        try {
 					throw new IOException(statusLine.getReasonPhrase());
 				} catch (IOException e) {
-                    return "Error closing database connection";
+                    return "Error closing connection is " + e.getMessage();
 				}
 		    }
 		}
