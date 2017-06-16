@@ -19,10 +19,7 @@ public class Utils {
 	public static Activity CurrentActivity;
     public static int maxMedlistRows = 4;
 	//Now using latest database (local) called sideEffects3
-	public static String urlBase =  "http://192.168.1.170:8888/sideEffectsNewRxnav";
-    //TODO: Change to 8888 everywhere
     //TODO: Change HTTP Error messages or add them here
-	//public static String urlBase =  "http://www.oryxtech.net/sideEffects";
 
     //multi:  ex. 2.5% to 8.4%, frequent, infrequent
     //single:  6.7%
@@ -34,12 +31,12 @@ public class Utils {
 
     //This is the test version
     //static String freqFormat =  "multi";
-    public static String interactionsUrl = "http://192.168.1.170:8888/sideEffectsNewRxnav";
     public static String localHost =  "http://192.168.1.170:8888/sideEffectsNewRxnav";
     public static String serverHost = "http://www.oryxtech.net/sideEffectsNewRxnav";
     public static String nuiUrl =  "http://rxnav.nlm.nih.gov/REST/search?conceptName=";
     public static String getInteractionsPhpUrl = "/interactions.php";
 
+    public static String urlBase =  localHost;
 
 
     private Utils(){
