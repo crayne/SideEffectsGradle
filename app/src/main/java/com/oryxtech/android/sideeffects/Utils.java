@@ -36,7 +36,7 @@ public class Utils {
     public static String nuiUrl =  "http://rxnav.nlm.nih.gov/REST/search?conceptName=";
     public static String getInteractionsPhpUrl = "/interactions.php";
 
-    public static String urlBase =  localHost;
+    public static String urlBase =  serverHost;
 
 
     private Utils(){
