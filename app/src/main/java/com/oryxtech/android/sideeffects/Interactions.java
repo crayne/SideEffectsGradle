@@ -107,6 +107,13 @@ public class Interactions extends Activity {
                 System.out.println("Class Cast Exception parsing interactions result " + e.getMessage());
             }
 
+            progressBar.setVisibility(View.INVISIBLE);
+            if (jsonArray == null){
+                Utils.displayToast(currentActivity, "No interactions found");
+                return;
+            }
+
+
             //Getting severities for first and second interactions correctly
             //Works for 2 medications, not for 4
             //TODO: skipping every other element is clearly wrong -- doesn't work for more than 2 medications
@@ -136,7 +143,6 @@ public class Interactions extends Activity {
 
 
             }
-            progressBar.setVisibility(View.INVISIBLE);
 
             TextView label = (TextView) currentActivity.findViewById(R.id.interactions_title);
 

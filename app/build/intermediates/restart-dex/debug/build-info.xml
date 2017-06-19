@@ -4,35 +4,27 @@
     api-level="23"
     density="xxxhdpi"
     format="7"
-    timestamp="10652058569250"
+    timestamp="72736863634247"
     token="-4487121610070956357" >
 
     <task
         name="javac"
-        duration="403" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="40" />
+        duration="0" />
     <task
         name="verifier"
-        duration="6" />
+        duration="0" />
 
-    <artifact
-        location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-        type="DEX" />
-
-    <build timestamp="7886821272285" >
+    <build timestamp="72680478971720" >
         <artifact
             location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="10652058569250" >
-        <artifact
-            location="/Users/susancrayne/SideEffectsAndroidNative/SideEffectsGradle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
-    </build>
+    <build timestamp="72736863634247" />
 
 </instant-run>
